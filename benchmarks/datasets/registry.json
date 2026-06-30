@@ -1,0 +1,19 @@
+{
+  "benchmarks": {
+    "nfcorpus": {
+      "domain": "medical",
+      "size_chunks": 350000,
+      "source": "https://huggingface.co/datasets/beir/nfcorpus"
+    },
+    "scidocs": {
+      "domain": "scientific",
+      "size_chunks": 450000,
+      "source": "https://huggingface.co/datasets/beir/scidocs"
+    },
+    "indian_judiciary": {
+      "domain": "legal",
+      "size_chunks": 310000,
+      "source": "https://huggingface.co/datasets/Deepti-singh-196/indian-judiciary-rag-indexes"
+    }
+  }
+}
