@@ -20,9 +20,10 @@ src/irlib/verification.py
 src/irlib.egg-info/PKG-INFO
 src/irlib.egg-info/SOURCES.txt
 src/irlib.egg-info/dependency_links.txt
-src/irlib.egg-info/requires.txt
 src/irlib.egg-info/top_level.txt
 src/irlib/advanced/explainer.py
+src/irlib/training/finetuner.py
+src/irlib/training/loop.py
 tests/test_benchmark.py
 tests/test_calibration.py
 tests/test_pipeline.py
