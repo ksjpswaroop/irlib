@@ -2,6 +2,7 @@
 LegalFineTuner: Domain adaptation for information retrieval.
 Optimizes embedding models using contrastive loss on legal corpora.
 """
+from typing import List, Tuple, Any
 import torch
 from torch.utils.data import DataLoader
 from sentence_transformers import SentenceTransformer, InputExample, losses
@@ -18,6 +19,9 @@ class LegalFineTuner:
 
     def fine_tune(self, train_examples: List[InputExample], output_path: str, epochs: int = 1):
         """Train using MultipleNegativesRankingLoss."""
+        if not train_examples:
+            print("No training data provided. Skipping fine-tuning.")
+            return
         train_dataloader = DataLoader(train_examples, shuffle=True, batch_size=16)
         train_loss = losses.MultipleNegativesRankingLoss(self.model)
         

@@ -13,6 +13,7 @@ from irlib.advanced.explainer import ColBERTInteraction, HydeExpander, LIMEExpla
 from irlib.advanced_hybrid import AdvancedHybridRetriever
 from irlib.pipeline import SearchPipeline
 from irlib.training.loop import LearningLoop
+from irlib.training.bayes import BayesianDocumentRouter
 from irlib.training.finetuner import LegalFineTuner
 from irlib.async_ import AsyncRetriever
 from irlib.cache import CachedRetriever, LRUCache
@@ -146,6 +147,7 @@ __all__ = [
     "KnowledgeGraphRetriever",
     "LambdaMARTRanker",
     "LanguageModelRetriever",
+    "BayesianDocumentRouter",
     "LearningLoop",
     "LegalFineTuner",
     "LIMEExplainer",
